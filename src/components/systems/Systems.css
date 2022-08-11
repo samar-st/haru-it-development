@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
+
+.item_systems { 
+    width: 100%;
+    display: flex;
+    background: #262627;
+    border-radius: 0px;
+    justify-content: space-around;
+    padding: 4rem 4rem;
+}
+.item_systems h1 { 
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    color: #E5E5E5;
+    margin-left:1.5%;
+}
+.item_systems .stats { 
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+    gap: 2rem;
+}
+.stats .numbers { 
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+}
+.numbers span:nth-child(2) { 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.numbers span:nth-child(1) { 
+    font-family: 'Paytone One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+
+.eco_haru { 
+    display: flex;
+    background: #262627;
+    border-radius: 0px;
+    width: 752px;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.eco_haru h2 { 
+    font-family: 'Paytone One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 44px;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.eco_haru img { 
+    width: 42px;
+    height: 42px;
+}
+@media (max-width:768px) { 
+    .item_container { 
+        margin-top: 5%;
+    }
+    .eco_haru{ 
+        width: 400px;
+        height: 90px;
+    }
+}
+@media (max-width:425px) { 
+    .item_systems { 
+     padding: 2rem 2rem !important;
+    }
+}

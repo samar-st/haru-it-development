@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+.order_item { 
+    width: 100%;
+    background: #262627;
+    border-radius: 0px;
+    padding: 5rem 4rem ;
+} 
+.inside_item { 
+    text-align: center;
+}
+.text_main { 
+    font-family: 'Paytone One', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 64px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+}
+.content_item { 
+    max-width: 590px;
+    margin-left: calc(50% - 591px/2 + 0.5px);
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #E5E5E5;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.form_item { 
+    justify-content: center;
+}
+.form_item .input1 { 
+    background: rgba(196, 196, 196, 0.1);
+    border-radius:10px;
+    height:50px;
+    margin-left: 15px;
+    border: 1px solid #C4C4C4;
+    color: #FFFFFF;
+}
+input::placeholder { 
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #A3A3A3;
+    margin-left:2px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.sending { 
+    margin: 15px;
+    background: #FF740F;
+    border: 2px solid #F1511B;
+    border-radius: 10px;
+    width: 410px;
+    height: 51px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #FFFFFF;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+@media (max-width:768px) { 
+    .sending { 
+        width: 90%;
+    }
+    .content_item { 
+        margin-left:10%;
+    }
+    .text_main { 
+       font-size: 40px;
+    }
+    .form_item input { 
+        margin: 20px;
+    }
+}

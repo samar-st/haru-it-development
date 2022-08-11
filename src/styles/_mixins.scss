@@ -1,0 +1,6 @@
+@mixin maxWidth {
+    max-width: 100%;
+    @media screen and (min-width: 1600px) {
+        margin: 0 auto;
+    }
+}

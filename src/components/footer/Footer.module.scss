@@ -1,0 +1,111 @@
+@use "../../styles/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+.footer { 
+    position: relative;
+    width: 100%;
+    background: #0D0D0E;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+ .links { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .brand { 
+    width: 74px;
+    height: 38px;
+    align-items: center;
+    justify-content:center;
+ }
+
+    .socialicons,
+    .menu { 
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px 0;
+        flex-wrap: wrap;
+    }
+
+    .socialicons li a { 
+        font-size:22px;
+        color: #FFFFFF;
+        margin: 0 10px;
+        display: inline-block;
+        transition: 0.3s;
+        background: rgba(196, 196, 196, 0.2);
+        border: 1px solid rgba(229, 229, 229, 0.3);
+        border-radius: 0px;
+        align-items: center;
+        text-align: center;
+        padding: 4px 9px;
+    }
+
+    .socialicons li a:hover { 
+        transform: translateY(-10px);
+    }
+    
+    .menu li a { 
+        margin: 0 10px;
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+    }
+
+    p { 
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 10px;
+        font-size:16px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    @media screen and (max-width:768px) { 
+       
+    }
+}
+
+.ending { 
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    gap: 1rem;
+    span { 
+        font-family: 'Source Sans Pro', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+    }
+    @media (max-width:768px) { 
+        flex-direction:row;
+        span { 
+            font-size:10.5px;
+        }
+    }
+}
+.line { 
+    height: 1px;
+    background: rgba(229, 229, 229, 0.3);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}

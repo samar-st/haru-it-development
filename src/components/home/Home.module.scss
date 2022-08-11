@@ -1,0 +1,117 @@
+@use "../../styles/mixins.scss";
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
+
+.home {
+    display: grid;
+    grid-template-columns: 45% 65%;
+
+    @include mixins.maxWidth();
+
+
+    .nav {
+        grid-column: 1/3;
+        grid-row: 1/2;
+        padding: 2rem;
+        width: 100%;
+    }
+    .bg1 {
+        position: relative;
+        grid-column: 2/3;
+        grid-row: 1/3;
+        height: 100%;
+        z-index: -1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        justify-content:flex-end;
+
+        .photoContainer {
+            position: absolute;
+            top: 0rem;
+            // left: -23%;
+            width: 100%;
+            height: 95%;
+            overflow-y: hidden;
+            @media screen and (max-width: 768px) {
+                width: 750px;
+                height: 750px;
+                left: -20%;
+            }
+            img {
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+
+    .slogan {
+        padding: 2rem;
+        grid-column: 1/3;
+        grid-row: 2/3;
+        max-width:698px;
+
+        @media screen and (max-width: 768px) {
+            max-width: 85vw;
+        }
+        @media screen and (max-width: 480px) {
+            max-width: unset;
+        }
+        h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 100px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            font-family: 'Jockey One', sans-serif;
+        }
+
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: 1px;
+            color: #E5E5E5;
+            font-family: 'Source Sans Pro', sans-serif;
+            margin-top: 1rem;
+        }
+
+        .btn {
+            padding: 1rem 1rem;
+            font-size:32px;
+            display: flex;
+            align-items: center;
+            gap: 0.8rem;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 30px;
+            letter-spacing: 1px;
+            background:#262627;
+            span, svg { 
+                color: #FFFFFF;
+                fill: #71C5EE;
+            }
+            cursor: pointer;
+            transition: all ease-in-out 250ms;
+            svg {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) { 
+    .home { 
+        overflow: hidden;
+        .slogan h1 { 
+            font-size: 54px;
+            line-height: 60px;
+        }
+    }
+
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+.nav {
+    position: relative;
+    z-index: 99;
+    display: flex;
+    width: 100%;
+    }
+    .logo {
+        cursor: pointer;
+        transition: color ease 0.3s;
+        width: 74px;
+        height: 37.49px;
+    }
+    .menu {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        width: max-content;
+        margin-left: auto;
+        padding: 0rem 4rem;
+        margin-left: 1%;
+        
+
+        @media screen and (max-width: 768px) {
+            position: fixed;
+            flex-direction: column;
+            align-items: flex-end;
+            width: max-content;
+            right: 0;
+            top: 0;
+            height: 100vh;
+            backdrop-filter: blur(25px);
+            transform:translateX(100%);
+            border-radius: 0;
+            padding: 0;
+            transition: transform 200ms ease-in-out;
+        }
+       
+        li a {
+            font-family: 'Source Sans Pro', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 20px;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            text-decoration: none;
+            &:hover { 
+               text-decoration: underline;
+               transition: .3s ease-in;
+            }
+            transition: color ease 0.3s;
+
+            @media screen and (max-width: 768px) {
+                &:first-child {
+                    margin-top: 2rem;
+                }
+
+                padding: 1rem 2rem;
+            }
+        }
+    }
+    
+    .mobileFaTimes,
+    .mobileBars {
+        cursor: pointer;
+        display: none;
+        @media screen and (max-width: 768px) {
+            display: flex;
+            align-items: center;
+            svg {
+                fill:#fff;
+                width: 27px;
+                height: 27px;
+            }
+        }
+    }
+    .mobileBars {
+        top: 2rem;
+        margin-left: 56%;
+        @media screen and (max-width:425px) { 
+            margin-left: 45% !important;
+        }
+    }
+    .mobileFaTimes { 
+        margin-top:2rem;
+        margin-right:3.5rem;
+    }
+    .menuMobileActive {
+        @media screen and (max-width: 768px) {
+            transform: translateX(0);
+        }
+    }
+
+// select { 
+//     font-family: 'Inter', sans-serif;
+//     font-style: normal;
+//     font-weight: 400;
+//     font-size: 18px;
+//     line-height: 22px;
+//     color: #EDCC9C;
+//     background: none;
+//     margin-bottom: 15px;
+//     text-align:center;
+//     margin-left: 50%;
+    
+// }
+// select option { 
+//     background: none transparent;
+// }

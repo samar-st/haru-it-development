@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz@8..144&display=swap');
+.abilities{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 51px;
+    margin-bottom: 185px;
+}
+.abilities h2{
+    font-size: 52px;
+    line-height: 64px;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.abilities__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 75px;
+}
+.abilities__item{
+    background-color: #e5e5e515;
+    position: relative;
+    overflow: hidden;
+    width: 392px;
+    height: 275px;
+    border-radius: 2px;
+    border: 1px solid #e5e5e585;
+    padding: 47px 17px 58px 17px;
+}
+.abilities__round{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #C4C4C4;
+    margin-bottom: 25px;
+}
+.abilities__text-wrapper{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 11px;
+    
+}
+.abilities__text-wrapper h3{
+    font-size: 23px;
+    line-height: 32px;
+    color: #fff;
+    font-weight: 400;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.abilities__text-wrapper p{
+    font-size: 16px;
+    line-height: 26px;
+    color: #E5E5E5;
+    font-weight: 400;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.abilities__tringle{
+    position: absolute;
+    width: 170px;
+    height: 100px;
+    border: 1px solid #e5e5e585;
+    right: -15%;
+    top: -10%;
+    transform: rotate(45deg);
+}
+
+@media(max-width:1400px){
+    .abilities__item{
+        width: 360px;
+        height: 260px;
+    }
+    .abilities__tringle{
+        width: 167px;
+        height: 89px;
+    }
+}
+
+@media(max-width:1200px){
+    .abilities__item{
+        width: 267px;
+        height: 251px;
+        padding: 47px 17px 33px 17px;
+    }
+    .abilities__tringle{
+        width: 149px;
+        height: 47px;
+    }
+    .abilities__round{
+        width: 45px;
+        height: 45px;
+    }
+    .abilities__wrapper{
+        column-gap: 65px;
+    }
+}
+@media(max-width:768px){
+    .abilities__item{
+        width: 100%;
+    }
+    .abilities__tringle {
+        height: 90px;
+    }
+    .abilities h2{
+        font-size: 40px;
+        line-height: 53px;
+    }
+}
+@media(max-width:375px){
+    .abilities__tringle {
+        height: 75px;
+    }
+    .abilities h2{
+        font-size: 40px;
+        line-height: 53px;
+    }
+}
